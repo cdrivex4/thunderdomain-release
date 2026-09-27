@@ -3,8 +3,8 @@
 
 [90mstdout[2m | tests/ui/delegation.test.ts[2m > [22m[2m<delegation-modal> Button & Radio Interaction Tests[2m > [22m[2mshould register boss profile when "Add Boss Profile" button is submitted
 [22m[39m[AUDIT-INFO] {
-  eventId: [32m'7afb4fcd-79d6-49ae-b3da-a1b5ed36e7bd'[39m,
-  timestamp: [32m'2026-09-27T10:53:23.771Z'[39m,
+  eventId: [32m'bf1ab529-55ec-4255-92d5-e35b7bdcbfb3'[39m,
+  timestamp: [32m'2026-09-27T10:58:27.067Z'[39m,
   facility: [32m'thunderbird-outlook-suite'[39m,
   version: [32m'1.0.0'[39m,
   severity: [32m'INFO'[39m,
@@ -23,48 +23,100 @@
     },
     colorCode: [32m'#d83b01'[39m
   },
-  integrityHash: [32m'73a748653dda847c762df4454fe4d4ff53ba802c22c8134f6112f5d775ed9887'[39m
+  integrityHash: [32m'377c5d96e95929cbbedaaa4fade3afb68f0164e2e46b58c7e5a662909b4e6abe'[39m
 }
 
-[90mstdout[2m | tests/ui/onboarding.test.ts[2m > [22m[2m<onboarding-wizard> Button & Form Interaction Tests[2m > [22m[2mshould provision ad.gov.sc account and save encrypted credentials on valid submission
+[90mstdout[2m | tests/unit/autodiscover-parser.test.ts[2m > [22m[2mAutodiscoverXmlParser & Legacy Server Provisioning[2m > [22m[2mshould dynamically update an existing account when an autodiscover.xml update occurs
 [22m[39m[AUDIT-INFO] {
-  eventId: [32m'd6c6677c-ea39-4493-8fad-e8547a746ef2'[39m,
-  timestamp: [32m'2026-09-27T10:53:23.817Z'[39m,
+  eventId: [32m'daedb835-415b-42e5-bd8b-c8ef8db09bcf'[39m,
+  timestamp: [32m'2026-09-27T10:58:27.134Z'[39m,
   facility: [32m'thunderbird-outlook-suite'[39m,
   version: [32m'1.0.0'[39m,
   severity: [32m'INFO'[39m,
   category: [32m'PROFILE_ONBOARDING'[39m,
-  actor: { accountEmail: [32m'officer@ad.gov.sc'[39m, role: [32m'PRIMARY_USER'[39m },
+  actor: { accountEmail: [32m'curtishoareau@sia.gov.sc'[39m, role: [32m'PRIMARY_USER'[39m },
   principal: [90mundefined[39m,
   action: [32m'ACCOUNT_PROVISIONED'[39m,
-  details: { domain: [32m'ad.gov.sc'[39m, isAdGovSc: [33mtrue[39m, backendType: [32m'm365_graph'[39m },
-  integrityHash: [32m'3d2fa8145c37151eea10fb0efcaf4c62a4bea23c50ec745c4b8ccdc64f42720f'[39m
+  details: {
+    domain: [32m'sia.gov.sc'[39m,
+    isAdGovSc: [33mtrue[39m,
+    backendType: [32m'caldav'[39m,
+    imapHost: [32m'old-mail.gov.sc'[39m,
+    caldavUrl: [32m'https://mail.egov.sc/dav/calendars/curtishoareau%40sia.gov.sc/'[39m
+  },
+  integrityHash: [32m'f08a2df24430391e9cef344a2dbeeba321a7911cd6982ab4f120c8164156a010'[39m
 }
 
- [32m✓[39m tests/ui/delegation.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 287[2mms[22m[39m
- [32m✓[39m tests/unit/fle-encryption.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 336[2mms[22m[39m
- [32m✓[39m tests/ui/onboarding.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 483[2mms[22m[39m
-   [33m[2m✓[22m[39m <onboarding-wizard> Button & Form Interaction Tests[2m > [22mshould provision ad.gov.sc account and save encrypted credentials on valid submission [33m415[2mms[22m[39m
- [32m✓[39m tests/ui/task-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 811[2mms[22m[39m
-   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould add a new task when form is submitted with title and category [33m392[2mms[22m[39m
-   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould toggle task completion state when checkbox is clicked [33m340[2mms[22m[39m
- [32m✓[39m tests/ui/notes-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 1075[2mms[22m[39m
-   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould instantiate a new note card when "+ New Note" button is clicked [33m406[2mms[22m[39m
-   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould delete a note card when the trash button is clicked [33m340[2mms[22m[39m
-   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould toggle pin state when pin button is clicked [33m327[2mms[22m[39m
- [32m✓[39m tests/ui/compose.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 177[2mms[22m[39m
- [32m✓[39m tests/ui/spaces-rail.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 89[2mms[22m[39m
- [32m✓[39m tests/unit/delta-store.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 37[2mms[22m[39m
- [32m✓[39m tests/ui/scheduler.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 143[2mms[22m[39m
- [32m✓[39m tests/ui/contact-card.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 58[2mms[22m[39m
- [32m✓[39m tests/unit/ical-parser.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 5[2mms[22m[39m
- [32m✓[39m tests/unit/raii.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 8[2mms[22m[39m
- [32m✓[39m tests/ui/settings.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 177[2mms[22m[39m
- [32m✓[39m tests/unit/crypto-vault.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 187[2mms[22m[39m
- [32m✓[39m tests/ui/sync-status.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 64[2mms[22m[39m
+[90mstdout[2m | tests/unit/autodiscover-parser.test.ts[2m > [22m[2mAutodiscoverXmlParser & Legacy Server Provisioning[2m > [22m[2mshould dynamically update an existing account when an autodiscover.xml update occurs
+[22m[39m[AUDIT-INFO] {
+  eventId: [32m'1bb4e5cc-150d-42eb-9c24-9fd15c980f53'[39m,
+  timestamp: [32m'2026-09-27T10:58:27.140Z'[39m,
+  facility: [32m'thunderbird-outlook-suite'[39m,
+  version: [32m'1.0.0'[39m,
+  severity: [32m'INFO'[39m,
+  category: [32m'PROFILE_ONBOARDING'[39m,
+  actor: { accountEmail: [32m'curtishoareau@sia.gov.sc'[39m, role: [32m'PRIMARY_USER'[39m },
+  principal: [90mundefined[39m,
+  action: [32m'AUTODISCOVER_ENDPOINT_UPDATED'[39m,
+  details: {
+    updates: {
+      imapServer: [36m[Object][39m,
+      smtpServer: [36m[Object][39m,
+      caldavUrl: [32m'https://mail.egov.sc/dav/calendars/curtishoareau@sia.gov.sc/'[39m,
+      carddavUrl: [32m'https://mail.egov.sc/dav/addressbooks/curtishoareau%40sia.gov.sc/'[39m,
+      autodiscoverUrl: [32m'https://mail.egov.sc/dav/calendars/curtishoareau@sia.gov.sc/'[39m
+    },
+    timestamp: [33m1790506707140[39m
+  },
+  integrityHash: [32m'7bfc48c04a521dc707afc54c694d41c95bafe9d1cdacf9ca9391c93b12f47f48'[39m
+}
 
-[2m Test Files [22m [1m[32m15 passed[39m[22m[90m (15)[39m
-[2m      Tests [22m [1m[32m43 passed[39m[22m[90m (43)[39m
-[2m   Start at [22m 14:53:21
-[2m   Duration [22m 6.44s[2m (transform 494ms, setup 771ms, collect 1.44s, tests 3.94s, environment 18.24s, prepare 2.02s)[22m
+ [32m✓[39m tests/unit/autodiscover-parser.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 85[2mms[22m[39m
+[90mstdout[2m | tests/ui/onboarding.test.ts[2m > [22m[2m<onboarding-wizard> Button & Form Interaction Tests[2m > [22m[2mshould provision sovereign legacy government account (e.g. sia.gov.sc on mail.egov.sc) and show Launch Suite button
+[22m[39m[AUDIT-INFO] {
+  eventId: [32m'ac271fc2-2a1b-4160-ba0e-7cafab2d2ef6'[39m,
+  timestamp: [32m'2026-09-27T10:58:27.170Z'[39m,
+  facility: [32m'thunderbird-outlook-suite'[39m,
+  version: [32m'1.0.0'[39m,
+  severity: [32m'INFO'[39m,
+  category: [32m'PROFILE_ONBOARDING'[39m,
+  actor: { accountEmail: [32m'curtishoareau@sia.gov.sc'[39m, role: [32m'PRIMARY_USER'[39m },
+  principal: [90mundefined[39m,
+  action: [32m'ACCOUNT_PROVISIONED'[39m,
+  details: {
+    domain: [32m'sia.gov.sc'[39m,
+    isAdGovSc: [33mtrue[39m,
+    backendType: [32m'caldav'[39m,
+    imapHost: [32m'mail.egov.sc'[39m,
+    caldavUrl: [32m'https://mail.egov.sc/dav/calendars/'[39m
+  },
+  integrityHash: [32m'bab66721c79c34fee72938b37d2e7ec131b78b135d988e66a7caaf044603d464'[39m
+}
+
+ [32m✓[39m tests/ui/delegation.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 269[2mms[22m[39m
+ [32m✓[39m tests/unit/fle-encryption.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 336[2mms[22m[39m
+ [32m✓[39m tests/ui/onboarding.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 552[2mms[22m[39m
+   [33m[2m✓[22m[39m <onboarding-wizard> Button & Form Interaction Tests[2m > [22mshould provision sovereign legacy government account (e.g. sia.gov.sc on mail.egov.sc) and show Launch Suite button [33m425[2mms[22m[39m
+ [32m✓[39m tests/ui/task-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 804[2mms[22m[39m
+   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould add a new task when form is submitted with title and category [33m388[2mms[22m[39m
+   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould toggle task completion state when checkbox is clicked [33m338[2mms[22m[39m
+ [32m✓[39m tests/ui/compose.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 164[2mms[22m[39m
+ [32m✓[39m tests/ui/spaces-rail.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 79[2mms[22m[39m
+ [32m✓[39m tests/unit/delta-store.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 41[2mms[22m[39m
+ [32m✓[39m tests/ui/scheduler.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 166[2mms[22m[39m
+ [32m✓[39m tests/ui/notes-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 1150[2mms[22m[39m
+   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould instantiate a new note card when "+ New Note" button is clicked [33m372[2mms[22m[39m
+   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould delete a note card when the trash button is clicked [33m372[2mms[22m[39m
+   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould toggle pin state when pin button is clicked [33m404[2mms[22m[39m
+ [32m✓[39m tests/unit/raii.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 9[2mms[22m[39m
+ [32m✓[39m tests/ui/contact-card.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 65[2mms[22m[39m
+ [32m✓[39m tests/unit/ical-parser.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 4[2mms[22m[39m
+ [32m✓[39m tests/unit/crypto-vault.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 177[2mms[22m[39m
+ [32m✓[39m tests/ui/settings.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 152[2mms[22m[39m
+ [32m✓[39m tests/ui/sync-status.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 58[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m16 passed[39m[22m[90m (16)[39m
+[2m      Tests [22m [1m[32m47 passed[39m[22m[90m (47)[39m
+[2m   Start at [22m 14:58:25
+[2m   Duration [22m 7.18s[2m (transform 557ms, setup 815ms, collect 1.51s, tests 4.11s, environment 19.02s, prepare 2.26s)[22m
 

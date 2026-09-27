@@ -1,11 +1,11 @@
 {
   "name": "thunderbird-outlook-suite",
   "version": "1.0.0",
-  "buildNumber": 8,
-  "manifestVersion": "1.0.0.8",
-  "gitCommit": "6ec2da6",
-  "buildTag": "v1.0.0-build.8+6ec2da6",
-  "buildTimestamp": "2026-09-27T10:53:28.727Z",
+  "buildNumber": 9,
+  "manifestVersion": "1.0.0.9",
+  "gitCommit": "2a8f339",
+  "buildTag": "v1.0.0-build.9+2a8f339",
+  "buildTimestamp": "2026-09-27T10:58:32.771Z",
   "targetHost": "Mozilla Thunderbird 128+ ESR (Supernova)",
   "compliance": [
     "ISO/IEC 27001:2022",
