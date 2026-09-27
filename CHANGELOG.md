@@ -23,7 +23,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 - Converted extension browser action from cramped 48px dropdown popup to full responsive tab router.
 - Switched cryptographic master key storage from shared static passphrase to per-installation `crypto.getRandomValues()` device secret.
 - Protected `auditLogs` table during ISO 27701 local cache wipe to maintain ISO 27001 A.8.15 integrity.
+- Re-routed compiled `.xpi` distribution packages, versioned artifacts, and checksums into a dedicated `build/` directory.
+- Configured public release pipeline (`scripts/publish-release.js` / `release.bat`) to automate auditor synchronization with strict exclusion of private internal blueprints (`docs/artifacts/`).
 
 ### Fixed
+- Fixed background worker execution in Manifest V2 by introducing `src/background.html` with ES module support, resolving `SyntaxError: import declarations may only appear at top level of a module`.
 - Fixed token refresh silent session expiration by adding `TokenRefreshManager`.
 - Fixed tab creation URL resolution on fresh Thunderbird window initialization.
+- Fixed UI bundle script imports to use reliable root-relative paths.
