@@ -1,2 +1,2 @@
-85cce9cbbd87bef426d83823408712ca390dd7c5f868b93f09104e7a63a4c665  thunderbird-outlook-suite.xpi
-85cce9cbbd87bef426d83823408712ca390dd7c5f868b93f09104e7a63a4c665  thunderbird-outlook-suite-v1.0.0-b4.xpi
+be6f416322d9d8d955431c0c58e3fc9ceda7d77bf389166d52cc5dc37e6b7ada  thunderbird-outlook-suite.xpi
+be6f416322d9d8d955431c0c58e3fc9ceda7d77bf389166d52cc5dc37e6b7ada  thunderbird-outlook-suite-v1.0.0-b5.xpi

@@ -3,8 +3,8 @@
 
 [90mstdout[2m | tests/ui/delegation.test.ts[2m > [22m[2m<delegation-modal> Button & Radio Interaction Tests[2m > [22m[2mshould register boss profile when "Add Boss Profile" button is submitted
 [22m[39m[AUDIT-INFO] {
-  eventId: [32m'ae991309-c977-49ff-bff6-b2e5664dc6b1'[39m,
-  timestamp: [32m'2026-09-27T10:38:56.215Z'[39m,
+  eventId: [32m'2bd1133f-228b-4abc-acb7-a78ec9637d5c'[39m,
+  timestamp: [32m'2026-09-27T10:39:52.671Z'[39m,
   facility: [32m'thunderbird-outlook-suite'[39m,
   version: [32m'1.0.0'[39m,
   severity: [32m'INFO'[39m,
@@ -23,13 +23,13 @@
     },
     colorCode: [32m'#d83b01'[39m
   },
-  integrityHash: [32m'061485f0fce3fea19377690bfff05a160aa2111c2def93289f151ed79f96622b'[39m
+  integrityHash: [32m'256fdefcd1d006ec1f428a4125bcdc04f991e367c9bfdbed8e98191d440477ed'[39m
 }
 
 [90mstdout[2m | tests/ui/onboarding.test.ts[2m > [22m[2m<onboarding-wizard> Button & Form Interaction Tests[2m > [22m[2mshould provision ad.gov.sc account and save encrypted credentials on valid submission
 [22m[39m[AUDIT-INFO] {
-  eventId: [32m'2a659c9f-93fc-4565-987d-77a97c139bad'[39m,
-  timestamp: [32m'2026-09-27T10:38:56.252Z'[39m,
+  eventId: [32m'557bfdd5-8cb8-440a-815a-3c680d14561d'[39m,
+  timestamp: [32m'2026-09-27T10:39:52.741Z'[39m,
   facility: [32m'thunderbird-outlook-suite'[39m,
   version: [32m'1.0.0'[39m,
   severity: [32m'INFO'[39m,
@@ -38,33 +38,33 @@
   principal: [90mundefined[39m,
   action: [32m'ACCOUNT_PROVISIONED'[39m,
   details: { domain: [32m'ad.gov.sc'[39m, isAdGovSc: [33mtrue[39m, backendType: [32m'm365_graph'[39m },
-  integrityHash: [32m'cbaeadbaeb8e20520cd48e80a4e3ec566df93a87c9b90e9985976bcbc2f068f0'[39m
+  integrityHash: [32m'8b26abbc953959c162e014e58c84932cc023d12cde481ed1e4c2975f58101f75'[39m
 }
 
- [32m✓[39m tests/unit/fle-encryption.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 295[2mms[22m[39m
- [32m✓[39m tests/ui/delegation.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 269[2mms[22m[39m
- [32m✓[39m tests/ui/onboarding.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 482[2mms[22m[39m
-   [33m[2m✓[22m[39m <onboarding-wizard> Button & Form Interaction Tests[2m > [22mshould provision ad.gov.sc account and save encrypted credentials on valid submission [33m416[2mms[22m[39m
- [32m✓[39m tests/ui/task-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 781[2mms[22m[39m
-   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould add a new task when form is submitted with title and category [33m397[2mms[22m[39m
-   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould toggle task completion state when checkbox is clicked [33m323[2mms[22m[39m
- [32m✓[39m tests/ui/notes-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 1040[2mms[22m[39m
-   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould instantiate a new note card when "+ New Note" button is clicked [33m379[2mms[22m[39m
-   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould delete a note card when the trash button is clicked [33m324[2mms[22m[39m
-   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould toggle pin state when pin button is clicked [33m336[2mms[22m[39m
- [32m✓[39m tests/ui/spaces-rail.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 71[2mms[22m[39m
- [32m✓[39m tests/ui/compose.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 171[2mms[22m[39m
- [32m✓[39m tests/unit/delta-store.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 38[2mms[22m[39m
- [32m✓[39m tests/ui/scheduler.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 135[2mms[22m[39m
- [32m✓[39m tests/ui/contact-card.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 74[2mms[22m[39m
+ [32m✓[39m tests/unit/fle-encryption.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 311[2mms[22m[39m
+ [32m✓[39m tests/ui/delegation.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 275[2mms[22m[39m
+ [32m✓[39m tests/ui/onboarding.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 487[2mms[22m[39m
+   [33m[2m✓[22m[39m <onboarding-wizard> Button & Form Interaction Tests[2m > [22mshould provision ad.gov.sc account and save encrypted credentials on valid submission [33m420[2mms[22m[39m
+ [32m✓[39m tests/ui/task-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 796[2mms[22m[39m
+   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould add a new task when form is submitted with title and category [33m389[2mms[22m[39m
+   [33m[2m✓[22m[39m <task-board> Button & Checkbox Interaction Tests[2m > [22mshould toggle task completion state when checkbox is clicked [33m338[2mms[22m[39m
+ [32m✓[39m tests/ui/notes-board.test.ts [2m([22m[2m3 tests[22m[2m)[22m[33m 1077[2mms[22m[39m
+   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould instantiate a new note card when "+ New Note" button is clicked [33m395[2mms[22m[39m
+   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould delete a note card when the trash button is clicked [33m339[2mms[22m[39m
+   [33m[2m✓[22m[39m <notes-board> Button & Pin/Delete Interaction Tests[2m > [22mshould toggle pin state when pin button is clicked [33m342[2mms[22m[39m
+ [32m✓[39m tests/ui/spaces-rail.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 74[2mms[22m[39m
+ [32m✓[39m tests/ui/compose.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 172[2mms[22m[39m
+ [32m✓[39m tests/unit/delta-store.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 34[2mms[22m[39m
+ [32m✓[39m tests/ui/scheduler.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 152[2mms[22m[39m
+ [32m✓[39m tests/ui/contact-card.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 58[2mms[22m[39m
  [32m✓[39m tests/unit/raii.test.ts [2m([22m[2m4 tests[22m[2m)[22m[90m 8[2mms[22m[39m
  [32m✓[39m tests/unit/ical-parser.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 4[2mms[22m[39m
- [32m✓[39m tests/ui/settings.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 152[2mms[22m[39m
- [32m✓[39m tests/unit/crypto-vault.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 173[2mms[22m[39m
- [32m✓[39m tests/ui/sync-status.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 60[2mms[22m[39m
+ [32m✓[39m tests/ui/settings.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 160[2mms[22m[39m
+ [32m✓[39m tests/unit/crypto-vault.test.ts [2m([22m[2m3 tests[22m[2m)[22m[90m 177[2mms[22m[39m
+ [32m✓[39m tests/ui/sync-status.test.ts [2m([22m[2m2 tests[22m[2m)[22m[90m 74[2mms[22m[39m
 
 [2m Test Files [22m [1m[32m15 passed[39m[22m[90m (15)[39m
 [2m      Tests [22m [1m[32m43 passed[39m[22m[90m (43)[39m
-[2m   Start at [22m 14:38:54
-[2m   Duration [22m 5.92s[2m (transform 382ms, setup 734ms, collect 1.15s, tests 3.75s, environment 15.93s, prepare 1.81s)[22m
+[2m   Start at [22m 14:39:50
+[2m   Duration [22m 6.20s[2m (transform 479ms, setup 768ms, collect 1.42s, tests 3.86s, environment 17.13s, prepare 2.36s)[22m
 
