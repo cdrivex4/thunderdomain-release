@@ -1,0 +1,15 @@
+{
+  "name": "thunderbird-outlook-suite",
+  "version": "1.0.0",
+  "buildNumber": 3,
+  "manifestVersion": "1.0.0.3",
+  "gitCommit": "bc0b1e4",
+  "buildTag": "v1.0.0-build.3+bc0b1e4",
+  "buildTimestamp": "2026-09-27T10:33:34.719Z",
+  "targetHost": "Mozilla Thunderbird 128+ ESR (Supernova)",
+  "compliance": [
+    "ISO/IEC 27001:2022",
+    "ISO/IEC 27701:2019",
+    "Seychelles DPA 2023"
+  ]
+}

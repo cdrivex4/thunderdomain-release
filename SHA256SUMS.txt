@@ -1,0 +1,2 @@
+7ac3db3cf99c3181a6bcfa6da80d7fec2b4c0efaeaee14e96a779109ff37c148  thunderbird-outlook-suite.xpi
+7ac3db3cf99c3181a6bcfa6da80d7fec2b4c0efaeaee14e96a779109ff37c148  thunderbird-outlook-suite-v1.0.0-b3.xpi

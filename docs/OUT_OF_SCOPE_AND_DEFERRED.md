@@ -1,0 +1,104 @@
+# Out of Scope & Deferred Architectural Inventory
+**Document Version:** `01.01`  
+**Location:** `docs/OUT_OF_SCOPE_AND_DEFERRED.md` / `docs/artifacts/01.01_out_of_scope_and_deferred.md`  
+**Authority:** Department of Information Communications Technology (DICT), Republic of Seychelles  
+**Classification:** GOVERNMENT RESTRICTED  
+
+---
+
+## 🎯 Executive Summary
+
+To maintain extreme reliability, deterministic memory safety (RAII), and rapid delivery of core Outlook parity for Government of Seychelles (`ad.gov.sc`) workstations, this document explicitly defines **what will NOT be built in the current release cycle**, the technical and performance reasons for exclusion, and the specific triggers required for future consideration.
+
+```
++----------------------------------------------------------------------------------------------------+
+|                                    Scope Boundary Classification                                   |
++------------------------------------+---------------------------------------------------------------+
+| Category                           | Strategic Treatment                                           |
++------------------------------------+---------------------------------------------------------------+
+| 🚫 Permanently Excluded (Dead Ends) | Architectural antipatterns, legacy deprecated protocols, and  |
+|                                    | security vulnerabilities forbidden by DICT ISO 27001 policies. |
++------------------------------------+---------------------------------------------------------------+
+| ⏳ Deferred to Future Phases (v2+) | Valid features postponed to prevent scope creep until core     |
+|                                    | Outlook parity & testing pipeline are certified in production.|
++------------------------------------+---------------------------------------------------------------+
+```
+
+---
+
+## 🚫 1. Permanently Excluded Items (Dead Ends & Forbidden Features)
+
+| Feature / Technology | Reason for Exclusion | Architectural & Security Impact |
+| :--- | :--- | :--- |
+| **Exchange Web Services (EWS) SOAP XML Protocol** | Microsoft has deprecated Basic Auth for EWS and is sunsetting EWS in favor of Graph API. | Parsing verbose SOAP XML incurs 4x CPU overhead and lacks delta sync change-tokens. |
+| **Direct Active Directory Password Syncing / Sharing** | Prohibited by ISO/IEC 27001:2022 Control A.5.15 and DICT Information Security Baseline. | Complete violation of non-repudiation; allows credential hijacking on shared workstations. |
+| **Legacy XUL / XPCOM Overlay Architecture** | Removed from Mozilla Thunderbird in version 68/78+. | Does not run on modern Thunderbird 115/128+ ESR engines. |
+| **Heavy UI Framework Runtimes (React 18/19, Vue 3, Angular)** | Massive bundle overhead (~350KB+), high memory churn, and virtual DOM memory retention. | Causes gradual heap leakage over 24/7 continuous Thunderbird desktop sessions. |
+| **Unencrypted / Cleartext Protocol Endpoints (POP3/IMAP Port 110/143, HTTP)** | Prohibited by Seychelles Data Protection Act 2023 & ISO 27001 Control A.8.20. | Exposes government correspondence to eavesdropping and MITM attacks on national networks. |
+| **Legacy Outlook MAPI / RPC-over-HTTP Direct Protocols** | Proprietary Microsoft Windows C++ binary protocols unportable to Ubuntu Linux. | Breaks cross-platform parity on Ubuntu 24.04 LTS workstations. |
+
+---
+
+## ⏳ 2. Deferred Features (Postponed to Future Versions)
+
+### 2.1 Native SIP / WebRTC Audio & Video Calling (Teams/Zoom In-App Engine)
+* **Status:** **Deferred to v2.2+**
+* **Reason:** Embedding a full WebRTC media processing stack within the Thunderbird MailExtension increases client memory footprint by 150MB+ and introduces significant hardware acceleration complexities across diverse Linux GPU drivers.
+* **Current Solution:** Extension automatically parses Teams / Zoom / Jitsi meeting URLs from calendar invites and opens them directly in the default system browser or desktop client.
+* **Future Trigger:** If DICT mandates an integrated in-app government video dialer.
+
+### 2.2 Server-Side Sieve Message Filter Script Compiler
+* **Status:** **Deferred to Phase 5+**
+* **Reason:** For on-premise non-365 mailboxes, compiling complex multi-condition Outlook rules into RFC 5228 Sieve scripts requires direct ManageSieve socket daemon access, which is blocked on certain restricted MDA firewalls.
+* **Current Solution:** Client-side rule evaluation via Thunderbird's native `filterEditor` and standard MailExtension message tagging.
+* **Future Trigger:** When DICT deploys standardized ManageSieve ports across all secondary on-premise mail servers.
+
+### 2.3 Real-Time Multi-Cursor Collaborative Note Co-Authoring (Fluid / OT Engine)
+* **Status:** **Deferred to v2.0**
+* **Reason:** Implementing Operational Transformation (OT) or Conflict-free Replicated Data Types (CRDTs) for live multi-user typing inside OneNote notes requires persistent WebSocket gateways and complex merge topologies.
+* **Current Solution:** Deterministic Last-Write-Wins (LWW) with revision timestamps and local dirty-state queueing.
+* **Future Trigger:** When government secretariats require live simultaneous co-editing inside the notes board.
+
+### 2.4 C++ / Rust Native Messaging Companion Daemon
+* **Status:** **Deferred / On Standby**
+* **Reason:** Standard WebExtension Experiment APIs (`experiment_apis`) currently provide all required access to Lightning calendar, Spaces bar, and address books without distributing secondary OS binaries.
+* **Future Trigger:** If Mozilla removes `experiment_apis` in Thunderbird 140+ ESR, or if DICT mandates Kerberos/GSSAPI hardware smartcard authentication via PKCS#11 native binaries.
+
+### 2.5 Cloud-Backed Purview DLP Real-Time Content Interception
+* **Status:** **Deferred to v2.5**
+* **Reason:** Real-time client-side regex matching and sensitivity label scanning across large attachments requires deep integration with Microsoft Purview cloud policy endpoints.
+* **Current Solution:** Privacy flags (`sensitivity: "private"`) and security classifications are enforced at the metadata level.
+* **Future Trigger:** When DICT establishes central Purview DLP tenant policies for all ministries.
+
+---
+
+## 📊 Summary Scope Boundary Matrix
+
+```
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ IN SCOPE (Current Build & Phased Delivery)                                      │
+├────────────────────────────────────────────────────────────────────────────────┤
+│ ✅ ad.gov.sc Zero-Config Account Provisioning & Endpoint Discovery              │
+│ ✅ Executive Delegation ("Secretary" / Boss Multi-Profile Switching)           │
+│ ✅ "Send on Behalf Of" RFC 5322 MIME Structuring & Privacy Masking             │
+│ ✅ Microsoft Graph API v1.0 Delta Change Tracking (@odata.deltaLink)           │
+│ ✅ CalDAV (RFC 4791) / CardDAV (RFC 6352) / IMAP Notes Dual Sync                │
+│ ✅ Vanilla TypeScript Web Components (Spaces, Tasks, Notes, Scheduler)         │
+│ ✅ Strict RAII Explicit Resource Management (Symbol.dispose / Symbol.asyncDispose)│
+│ ✅ ISO/IEC 27001:2022 & DPA 2023 AES-GCM 256-bit Cryptographic Vault           │
+│ ✅ 100% Automated Button Interaction Test Pipeline (Vitest, MSW, Playwright)   │
+└────────────────────────────────────────────────────────────────────────────────┘
+                                        │
+                                        ▼
+┌────────────────────────────────────────────────────────────────────────────────┐
+│ OUT OF SCOPE / DEFERRED (What We Are NOT Building Yet)                         │
+├────────────────────────────────────────────────────────────────────────────────┤
+│ ❌ EWS SOAP Legacy XML Engine (Deprecated / Dead End)                         │
+│ ❌ Direct Password Syncing / Sharing (ISO 27001 Violation)                    │
+│ ❌ Embedded WebRTC Teams/Zoom Video Calling Client                             │
+│ ❌ Server-Side Sieve Rule Bytecode Compiler                                    │
+│ ❌ Live Multi-Cursor CRDT Note Co-Authoring                                   │
+│ ❌ Native OS C++ Companion Daemon (Not Needed on TB 128 ESR)                   │
+│ ❌ Real-time Purview Cloud DLP Attachment Interceptor                          │
+└────────────────────────────────────────────────────────────────────────────────┘
+```
