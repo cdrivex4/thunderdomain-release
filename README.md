@@ -4,7 +4,7 @@
 [![ISO 27001 Compliant](https://img.shields.io/badge/Security-ISO%2FIEC%2027001%3A2022-brightgreen)](docs/compliance/ISO-27001-ISMS-POLICY.md)
 [![Seychelles DPA 2023](https://img.shields.io/badge/Privacy-Seychelles%20DPA%202023-blue)](docs/compliance/ISO-27701-PRIVACY-NOTICE.md)
 [![Thunderbird 128+ ESR](https://img.shields.io/badge/Host-Thunderbird%20128%2B%20ESR-orange)](https://www.thunderbird.net/)
-[![Build Version](https://img.shields.io/badge/Release-v1.0.0--b5-blueviolet)](build-info.json)
+[![Build Version](https://img.shields.io/badge/Release-v1.0.0--b6-blueviolet)](build-info.json)
 
 An enterprise-grade Mozilla Thunderbird extension providing complete feature parity with Microsoft Outlook for the **Government of Seychelles (DICT)** and enterprise groupware environments.
 
@@ -19,14 +19,14 @@ An enterprise-grade Mozilla Thunderbird extension providing complete feature par
 | Package File | Target Platform | Description |
 | :--- | :--- | :--- |
 | [`thunderbird-outlook-suite.xpi`](thunderbird-outlook-suite.xpi) | Thunderbird 128+ ESR / 156+ (Win/Linux) | Latest Production MailExtension Package |
-| [`thunderbird-outlook-suite-v1.0.0-b5.xpi`](thunderbird-outlook-suite-v1.0.0-b5.xpi) | Versioned Release | Immutable Build Artifact (#5) |
+| [`thunderbird-outlook-suite-v1.0.0-b6.xpi`](thunderbird-outlook-suite-v1.0.0-b6.xpi) | Versioned Release | Immutable Build Artifact (#6) |
 | [`SHA256SUMS.txt`](SHA256SUMS.txt) | Integrity Verification | Cryptographic Hash Manifest |
 | [`build-info.json`](build-info.json) | Build Provenance | Metadata, Git Commit Hash & Timestamp |
 
 ### 🔒 Cryptographic Checksums (SHA-256)
 ```text
-be6f416322d9d8d955431c0c58e3fc9ceda7d77bf389166d52cc5dc37e6b7ada  thunderbird-outlook-suite.xpi
-be6f416322d9d8d955431c0c58e3fc9ceda7d77bf389166d52cc5dc37e6b7ada  thunderbird-outlook-suite-v1.0.0-b5.xpi
+348f86dbe3a1c579f6bd0b20c5d7e01ac1a5b5c711fd2c8d3995e095d54c1dc3  thunderbird-outlook-suite.xpi
+348f86dbe3a1c579f6bd0b20c5d7e01ac1a5b5c711fd2c8d3995e095d54c1dc3  thunderbird-outlook-suite-v1.0.0-b6.xpi
 ```
 
 To verify integrity on Windows:
