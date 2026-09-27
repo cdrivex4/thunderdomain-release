@@ -4,7 +4,7 @@
 [![ISO 27001 Compliant](https://img.shields.io/badge/Security-ISO%2FIEC%2027001%3A2022-brightgreen)](docs/compliance/ISO-27001-ISMS-POLICY.md)
 [![Seychelles DPA 2023](https://img.shields.io/badge/Privacy-Seychelles%20DPA%202023-blue)](docs/compliance/ISO-27701-PRIVACY-NOTICE.md)
 [![Thunderbird 128+ ESR](https://img.shields.io/badge/Host-Thunderbird%20128%2B%20ESR-orange)](https://www.thunderbird.net/)
-[![Build Version](https://img.shields.io/badge/Release-v1.0.0--b9-blueviolet)](build-info.json)
+[![Build Version](https://img.shields.io/badge/Release-v1.0.0--b10-blueviolet)](build-info.json)
 
 An enterprise-grade Mozilla Thunderbird extension providing complete feature parity with Microsoft Outlook for the **Government of Seychelles (DICT)** and enterprise groupware environments.
 
@@ -19,14 +19,14 @@ An enterprise-grade Mozilla Thunderbird extension providing complete feature par
 | Package File | Target Platform | Description |
 | :--- | :--- | :--- |
 | [`thunderbird-outlook-suite.xpi`](thunderbird-outlook-suite.xpi) | Thunderbird 128+ ESR / 156+ (Win/Linux) | Latest Production MailExtension Package |
-| [`thunderbird-outlook-suite-v1.0.0-b9.xpi`](thunderbird-outlook-suite-v1.0.0-b9.xpi) | Versioned Release | Immutable Build Artifact (#9) |
+| [`thunderbird-outlook-suite-v1.0.0-b10.xpi`](thunderbird-outlook-suite-v1.0.0-b10.xpi) | Versioned Release | Immutable Build Artifact (#10) |
 | [`SHA256SUMS.txt`](SHA256SUMS.txt) | Integrity Verification | Cryptographic Hash Manifest |
 | [`build-info.json`](build-info.json) | Build Provenance | Metadata, Git Commit Hash & Timestamp |
 
 ### 🔒 Cryptographic Checksums (SHA-256)
 ```text
-cc637cf48d3b75af8d679ca2113c8a27e56dd41445e40c4c3441a6e23e06c419  thunderbird-outlook-suite.xpi
-cc637cf48d3b75af8d679ca2113c8a27e56dd41445e40c4c3441a6e23e06c419  thunderbird-outlook-suite-v1.0.0-b9.xpi
+c16d9d5b30cea7fa837c0db073449d0f0a1d6fcf96cd0e536b551b9ba911eaa5  thunderbird-outlook-suite.xpi
+c16d9d5b30cea7fa837c0db073449d0f0a1d6fcf96cd0e536b551b9ba911eaa5  thunderbird-outlook-suite-v1.0.0-b10.xpi
 ```
 
 To verify integrity on Windows:
